@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8773
+zuul:
+  routes:
+    api:
+      path: /xum/**
+      serviceId: eureka-client
+spring:
+  application:
+    name: eureka-zuul
