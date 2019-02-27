@@ -1,5 +1,6 @@
 package com.xum.ribbonconsumer.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,9 +19,15 @@ public class RibbonConsumerController {
     RestTemplate restTemplate;
 
     @RequestMapping(value = "/test")
+    @HystrixCommand(fallbackMethod = "testConsumer_ribbon")
     public String testConsumer() {
         LOG.info("RibbonConsumerController=>testConsumer");
         return restTemplate.getForEntity("http://eureka-client/testone/test",String.class).getBody();
+    }
+
+    public String testConsumer_ribbon() {
+        LOG.info("RibbonConsumerController=>testConsumer_ribbon");
+        return "testConsumer_ribbon";
     }
 
 }
