@@ -11,6 +11,23 @@ eureka:
 spring:
   application:
     name: eureka-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xumgit/SpringConfig/
+          searchPaths: repos
+          username: xumgit
+          password: xu1332080218
+      label: mater
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 #spring:
 #  security:
 #    user:

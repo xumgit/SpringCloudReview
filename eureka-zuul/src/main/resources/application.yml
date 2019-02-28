@@ -9,6 +9,22 @@ zuul:
     api:
       path: /xum/**
       serviceId: eureka-client
+#zuul:
+#  routes:
+#    api-a:
+#      path: /api-a/**
+#      serviceId: microservice-client-ribbon
+#    api-b:
+#      path: /api-b/**
+#      serviceId: microservice-client-feign
 spring:
   application:
     name: eureka-zuul
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
