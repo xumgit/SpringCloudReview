@@ -7,6 +7,11 @@ server:
 spring:
   application:
     name: eureka-client
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 management:
   endpoint:
     health:
@@ -14,5 +19,5 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh,health,info
-        #include: '*'
+        #include: refresh,health,info
+        include: '*'
