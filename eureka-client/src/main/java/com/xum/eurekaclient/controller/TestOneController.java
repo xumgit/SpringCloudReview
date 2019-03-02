@@ -38,7 +38,7 @@ public class TestOneController {
 
     @RequestMapping(value = "/test")
     public String test(@RequestParam(value = "name", required = false, defaultValue = "testOneClient")String name) {
-        List<ServiceInstance> list = discoveryClient.getInstances("eureka-client");
+        /*List<ServiceInstance> list = discoveryClient.getInstances("eureka-client");
         LOG.info("discoveryClient.getServices().size() = " + discoveryClient.getServices().size());
         for( String s :  discoveryClient.getServices()){
             List<ServiceInstance> serviceInstances =  discoveryClient.getInstances(s);
@@ -48,7 +48,7 @@ public class TestOneController {
                 LOG.info("services:" + s + ":getServiceId()=" + si.getServiceId());
                 LOG.info("services:" + s + ":getUri()=" + si.getUri());
             }
-        }
+        }*/
         String info = "Hi " + name + ", this is EurekaClient, port is " + port;
         return info;
     }

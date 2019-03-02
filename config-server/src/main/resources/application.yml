@@ -11,17 +11,16 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/xumgit/SpringConfig/
+          uri: https://github.com/xumgit/SpringConfig
           searchPaths: repos
           username: xumgit
           password: xu1332080218
-      label: mater
+      label: master
   rabbitmq:
     host: 127.0.0.1
     port: 5672
     username: guest
     password: guest
-    connection-timeout: 1000ms
 management:
   endpoint:
     health:
