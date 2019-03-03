@@ -4,19 +4,24 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 server:
   port: 8773
-zuul:
-  routes:
-    api:
-      path: /xum/**
-      serviceId: eureka-client
 #zuul:
 #  routes:
-#    api-a:
-#      path: /api-a/**
-#      serviceId: microservice-client-ribbon
-#    api-b:
-#      path: /api-b/**
-#      serviceId: microservice-client-feign
+#    api:
+#      path: /xum/**
+#      serviceId: eureka-client
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: ribbon-consumer
+    api-b:
+      path: /api-b/**
+      serviceId: fegin-client
+turbine:
+  aggregator:
+    cluster-config: default
+  app-config: '*'
+  cluster-name-expression: new String("default")
 spring:
   application:
     name: eureka-zuul
