@@ -3,18 +3,10 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 server:
-  port: 8772
+  port: 8766
 spring:
   application:
-    name: fegin-client
-  zipkin:
-    base-url: http://localhost:8766
-  sleuth:
-    sampler:
-      probability: 1.0
-feign:
-  hystrix:
-    enabled: true
+    name: zipkin-server
 management:
   endpoint:
     health:
@@ -23,3 +15,7 @@ management:
     web:
       exposure:
         include: '*'
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
