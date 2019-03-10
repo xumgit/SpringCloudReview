@@ -9,7 +9,7 @@
 .settings
 .springBeans
 .sts4-cache
-/log/
+/logs/
 /upload/*
 !/upload/images/
 
