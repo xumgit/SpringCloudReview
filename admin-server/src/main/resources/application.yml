@@ -1,0 +1,41 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8767
+spring:
+  application:
+    name: admin-server
+  profiles:
+    active:
+      - secure
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  file: "logs/admin-server.log"
+---
+spring:
+  profiles: insecure
+
+---
+# admin登录的用户名和密码
+spring:
+  profiles: secure
+  security:
+    user:
+      name: "root"
+      password: "1332080218"
+
+# 注册给eureka的时候告诉eureka自己的密码
+eureka:
+  instance:
+    metadata-map:
+      "user.name": ${spring.security.user.name}         #These two are needed so that the server
+      "user.password": ${spring.security.user.password} #can access the protected client endpoints

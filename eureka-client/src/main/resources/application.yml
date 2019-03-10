@@ -7,6 +7,14 @@ server:
 spring:
   application:
     name: eureka-client
+  boot:
+    admin:
+      client:
+        url: http://localhost:8767
+        name: "root"
+        password: "1332080218"
+        instance:
+          prefer-ip: true
   zipkin:
     base-url: http://localhost:8766
   sleuth:
@@ -26,3 +34,5 @@ management:
       exposure:
         #include: refresh,health,info
         include: '*'
+logging:
+  file: "logs/eureka-client.log"
