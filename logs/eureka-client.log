@@ -787,3 +787,266 @@ java.lang.IllegalStateException: couldn't determine local port. Please set sprin
 2019-03-10 18:54:49.553  INFO [eureka-client,,,] 19268 --- [RMI TCP Connection(3)-172.31.149.177] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://LAPTOP-R75OOT6B:8765/
 2019-03-10 18:54:52.470  INFO [eureka-client,,,] 19268 --- [RMI TCP Connection(3)-172.31.149.177] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=eureka-client, profiles=[dev], label=master, version=addadb9ed2392ae7f6dddc63a5be60361e2ad8d6, state=null
 2019-03-10 18:54:57.735  WARN [eureka-client,,,] 19268 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=eureka-client, managementUrl=http://172.31.149.177:8762/actuator, healthUrl=http://172.31.149.177:8762/actuator/health, serviceUrl=http://172.31.149.177:8762/) at spring-boot-admin ([http://localhost:8767/instances]): 401 null. Further attempts are logged on DEBUG level
+2019-03-16 15:42:39.703  INFO [eureka-client,,,] 6780 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://LAPTOP-R75OOT6B:8765/
+2019-03-16 15:42:41.413  INFO [eureka-client,,,] 6780 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=eureka-client, profiles=[dev], label=master, version=addadb9ed2392ae7f6dddc63a5be60361e2ad8d6, state=null
+2019-03-16 15:42:41.413  INFO [eureka-client,,,] 6780 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/xumgit/SpringConfig/repos/eureka-client-dev.properties'}]}
+2019-03-16 15:42:41.460  INFO [eureka-client,,,] 6780 --- [main] c.x.e.EurekaClientApplication            : No active profile set, falling back to default profiles: default
+2019-03-16 15:42:42.007  WARN [eureka-client,,,] 6780 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+2019-03-16 15:42:42.241  WARN [eureka-client,,,] 6780 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-03-16 15:42:42.523  INFO [eureka-client,,,] 6780 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9c38c991-912c-37aa-9b0e-11265a1fbcbb
+2019-03-16 15:42:42.538  INFO [eureka-client,,,] 6780 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2019-03-16 15:42:42.538  INFO [eureka-client,,,] 6780 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2019-03-16 15:42:42.554  INFO [eureka-client,,,] 6780 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2019-03-16 15:42:42.570  INFO [eureka-client,,,] 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$1987a2d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-16 15:42:42.804  INFO [eureka-client,,,] 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-16 15:42:42.835  INFO [eureka-client,,,] 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$be0d9fd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-16 15:42:42.851  INFO [eureka-client,,,] 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration$$EnhancerBySpringCGLIB$$999faaf8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-16 15:42:42.866  INFO [eureka-client,,,] 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$d28753c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-16 15:42:42.866  INFO [eureka-client,,,] 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-16 15:42:42.898  INFO [eureka-client,,,] 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6f35e7a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-16 15:42:43.413  INFO [eureka-client,,,] 6780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8762 (http)
+2019-03-16 15:42:43.429  INFO [eureka-client,,,] 6780 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-16 15:42:43.445  INFO [eureka-client,,,] 6780 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-16 15:42:43.445  INFO [eureka-client,,,] 6780 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_201\bin;;C:\php\;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\xum12\AppData\Local\Microsoft\WindowsApps;C:\Users\xum12\AppData\Local\GitHubDesktop\bin;.]
+2019-03-16 15:42:43.695  INFO [eureka-client,,,] 6780 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-16 15:42:43.695  INFO [eureka-client,,,] 6780 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2219 ms
+2019-03-16 15:42:43.851  WARN [eureka-client,,,] 6780 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-03-16 15:42:43.851  INFO [eureka-client,,,] 6780 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-03-16 15:42:43.866  INFO [eureka-client,,,] 6780 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@24aedcc5
+2019-03-16 15:42:45.179  INFO [eureka-client,,,] 6780 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-03-16 15:42:45.570  INFO [eureka-client,,,] 6780 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2019-03-16 15:42:45.616  WARN [eureka-client,,,] 6780 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-03-16 15:42:45.616  INFO [eureka-client,,,] 6780 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-03-16 15:42:45.820  INFO [eureka-client,,,] 6780 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-16 15:42:46.366  INFO [eureka-client,,,] 6780 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2019-03-16 15:42:47.851  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-03-16 15:42:47.866  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-03-16 15:42:47.960  INFO [eureka-client,,,] 6780 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 25 endpoint(s) beneath base path '/actuator'
+2019-03-16 15:42:48.054  INFO [eureka-client,,,] 6780 --- [main] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'eureka-client-1.springCloudBusInput' has 1 subscriber(s).
+2019-03-16 15:42:48.413  INFO [eureka-client,,,] 6780 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2019-03-16 15:42:48.491  INFO [eureka-client,,,] 6780 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2019-03-16 15:42:48.523  INFO [eureka-client,,,] 6780 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2019-03-16 15:42:48.538  INFO [eureka-client,,,] 6780 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2019-03-16 15:42:48.554  INFO [eureka-client,,,] 6780 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@4ef28dc4
+2019-03-16 15:42:48.616  INFO [eureka-client,,,] 6780 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2019-03-16 15:42:48.663  INFO [eureka-client,,,] 6780 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2019-03-16 15:42:48.663  INFO [eureka-client,,,] 6780 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'eureka-client-1.errorChannel' has 1 subscriber(s).
+2019-03-16 15:42:48.663  INFO [eureka-client,,,] 6780 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2019-03-16 15:42:49.054  INFO [eureka-client,,,] 6780 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8765/
+2019-03-16 15:42:50.507  INFO [eureka-client,,,] 6780 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=eureka-client, profiles=[dev], label=master, version=addadb9ed2392ae7f6dddc63a5be60361e2ad8d6, state=null
+2019-03-16 15:42:50.507  INFO [eureka-client,,,] 6780 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/xumgit/SpringConfig/repos/eureka-client-dev.properties'}]}
+2019-03-16 15:42:50.616 ERROR [eureka-client,,,] 6780 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.IllegalStateException: couldn't determine local port. Please set spring.boot.admin.client.instance.service-base-url.
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getLocalServerPort(DefaultApplicationFactory.java:189)
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getServiceBaseUrl(DefaultApplicationFactory.java:104)
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getServiceUrl(ServletApplicationFactory.java:62)
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77)
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:150)
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:75)
+	at de.codecentric.boot.admin.client.registration.ApplicationRegistrator.createApplication(ApplicationRegistrator.java:154)
+	at de.codecentric.boot.admin.client.registration.ApplicationRegistrator.register(ApplicationRegistrator.java:71)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-03-16 15:42:50.648  INFO [eureka-client,,,] 6780 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:42:51.679  INFO [eureka-client,,,] 6780 --- [main] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'eureka-client-1.springCloudBusOutput' has 1 subscriber(s).
+2019-03-16 15:42:51.695  INFO [eureka-client,,,] 6780 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-03-16 15:42:51.695  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-03-16 15:42:51.695  INFO [eureka-client,,,] 6780 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-03-16 15:42:51.695  INFO [eureka-client,,,] 6780 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-03-16 15:42:51.695  INFO [eureka-client,,,] 6780 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-03-16 15:42:51.695  INFO [eureka-client,,,] 6780 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-03-16 15:42:51.741  INFO [eureka-client,,,] 6780 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-16 15:42:51.757  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-03-16 15:42:51.757  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-03-16 15:42:51.757  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-03-16 15:42:51.757  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-03-16 15:42:51.757  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-03-16 15:42:51.757  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-03-16 15:42:51.757  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-03-16 15:42:51.757  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-03-16 15:42:51.757  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-03-16 15:42:51.757  INFO [eureka-client,,,] 6780 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-03-16 15:42:51.757  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1552722171757 with initial instances count: 1
+2019-03-16 15:42:51.757  INFO [eureka-client,,,] 6780 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-CLIENT with eureka with status UP
+2019-03-16 15:42:51.757  INFO [eureka-client,,,] 6780 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1552722171757, current=UP, previous=STARTING]
+2019-03-16 15:42:51.773  INFO [eureka-client,,,] 6780 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT/LAPTOP-R75OOT6B:eureka-client:8762: registering service...
+2019-03-16 15:42:51.773  INFO [eureka-client,,,] 6780 --- [main] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw, bound to: springCloudBus
+2019-03-16 15:42:51.788  INFO [eureka-client,,,] 6780 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:42:51.804  INFO [eureka-client,,,] 6780 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT/LAPTOP-R75OOT6B:eureka-client:8762 - registration status: 204
+2019-03-16 15:42:52.804  INFO [eureka-client,,,] 6780 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:42:53.835  INFO [eureka-client,,,] 6780 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:42:54.882  INFO [eureka-client,,,] 6780 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw.errors
+2019-03-16 15:42:54.976  INFO [eureka-client,,,] 6780 --- [main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'eureka-client-1.springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw.errors' has 1 subscriber(s).
+2019-03-16 15:42:54.976  INFO [eureka-client,,,] 6780 --- [main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'eureka-client-1.springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw.errors' has 2 subscriber(s).
+2019-03-16 15:42:54.991  INFO [eureka-client,,,] 6780 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:42:56.023  INFO [eureka-client,,,] 6780 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start
+2019-03-16 15:42:56.023  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:42:57.054  INFO [eureka-client,,,] 6780 --- [main] o.s.i.a.i.AmqpInboundChannelAdapter      : started inbound.springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw
+2019-03-16 15:42:57.116  INFO [eureka-client,,,] 6780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8762 (http) with context path ''
+2019-03-16 15:42:57.116  INFO [eureka-client,,,] 6780 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8762
+2019-03-16 15:42:57.116  INFO [eureka-client,,,] 6780 --- [main] c.x.e.EurekaClientApplication            : Started EurekaClientApplication in 21.275 seconds (JVM running for 23.944)
+2019-03-16 15:42:57.445  INFO [eureka-client,,,] 6780 --- [RMI TCP Connection(3)-10.0.23.62] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-16 15:42:57.445  INFO [eureka-client,,,] 6780 --- [RMI TCP Connection(3)-10.0.23.62] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-16 15:42:57.460  INFO [eureka-client,,,] 6780 --- [RMI TCP Connection(3)-10.0.23.62] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-03-16 15:42:57.866  INFO [eureka-client,,,] 6780 --- [RMI TCP Connection(5)-10.0.23.62] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:42:58.883  WARN [eureka-client,,,] 6780 --- [RMI TCP Connection(5)-10.0.23.62] o.s.b.a.amqp.RabbitHealthIndicator       : Rabbit health check failed
+
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:509)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:682)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:214)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2061)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2035)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2015)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:48)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:84)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:98)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:98)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:98)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:246)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:76)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:61)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:126)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:99)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1102)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1054)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:994)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:462)
+	... 44 common frames omitted
+
+2019-03-16 15:42:58.883  INFO [eureka-client,,,] 6780 --- [RMI TCP Connection(5)-10.0.23.62] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:42:59.898  WARN [eureka-client,,,] 6780 --- [RMI TCP Connection(5)-10.0.23.62] o.s.b.a.amqp.RabbitHealthIndicator       : Rabbit health check failed
+
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:509)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:682)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:214)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2061)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2035)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2015)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:48)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:84)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:98)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:246)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:76)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:61)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:126)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:99)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1102)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1054)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:994)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:462)
+	... 42 common frames omitted
+
+2019-03-16 15:42:59.920  INFO [eureka-client,,,] 6780 --- [RMI TCP Connection(5)-10.0.23.62] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://LAPTOP-R75OOT6B:8765/
+2019-03-16 15:43:01.470  INFO [eureka-client,,,] 6780 --- [RMI TCP Connection(5)-10.0.23.62] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=eureka-client, profiles=[dev], label=master, version=addadb9ed2392ae7f6dddc63a5be60361e2ad8d6, state=null
+2019-03-16 15:43:01.663  WARN [eureka-client,,,] 6780 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=eureka-client, managementUrl=http://10.0.23.62:8762/actuator, healthUrl=http://10.0.23.62:8762/actuator/health, serviceUrl=http://10.0.23.62:8762/) at spring-boot-admin ([http://localhost:8767/instances]): I/O error on POST request for "http://localhost:8767/instances": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect. Further attempts are logged on DEBUG level
+2019-03-16 15:43:02.157  WARN [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-1] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2019-03-16 15:43:02.160  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1e033801: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2019-03-16 15:43:02.162  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:43:08.320  WARN [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-2] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2019-03-16 15:43:08.320  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@25edb6a3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2019-03-16 15:43:08.320  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:43:14.474  WARN [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-3] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2019-03-16 15:43:14.474  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@21f23b32: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2019-03-16 15:43:14.474  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:43:20.567  WARN [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-4] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2019-03-16 15:43:20.567  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@17c86eb1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2019-03-16 15:43:20.567  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:43:26.691  WARN [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-5] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2019-03-16 15:43:26.691  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-5] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3605d97b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2019-03-16 15:43:26.692  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-6] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:43:32.818  WARN [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-6] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2019-03-16 15:43:32.818  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-6] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2a1ab1d7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2019-03-16 15:43:32.818  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-7] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2019-03-16 15:43:38.933  WARN [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-7] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2019-03-16 15:43:38.933  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-7] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7a3fd7e2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2019-03-16 15:43:38.933  INFO [eureka-client,,,] 6780 --- [springCloudBus.anonymous.sOeHXbD1TNuKwCXN9LC1xw-8] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
