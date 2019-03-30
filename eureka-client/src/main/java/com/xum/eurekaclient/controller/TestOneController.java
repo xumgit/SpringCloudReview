@@ -53,9 +53,10 @@ public class TestOneController {
         return info;
     }
 
-    @RequestMapping(value = "/config", method = RequestMethod.GET)
+    @RequestMapping(value = "/config", method = {RequestMethod.POST, RequestMethod.GET})
     public String config() {
         String info = "port:" + port + ",message:" + message + ",foo:" + foo;
+        LOG.info("info:" + info);
         return info;
     }
 }
