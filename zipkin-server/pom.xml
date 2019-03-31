@@ -32,10 +32,10 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-sleuth</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-zipkin</artifactId>-->
+        <!--</dependency>-->
         <!-- https://mvnrepository.com/artifact/io.zipkin.java/zipkin-server -->
         <dependency>
             <groupId>io.zipkin.java</groupId>
@@ -43,7 +43,7 @@
             <version>2.12.3</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-sleuth-zipkin-stream -->
-        <!--<dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-sleuth-zipkin-stream</artifactId>
             <version>1.3.5.RELEASE</version>
@@ -51,7 +51,7 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
-        </dependency>-->
+        </dependency>
         <!-- https://mvnrepository.com/artifact/io.zipkin.java/zipkin-autoconfigure-ui -->
         <dependency>
             <groupId>io.zipkin.java</groupId>

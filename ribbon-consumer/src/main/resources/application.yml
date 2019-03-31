@@ -7,6 +7,11 @@ server:
 spring:
   application:
     name: ribbon-consumer
+  zipkin:
+    base-url: http://localhost:8766
+    sleuth:
+      sampler:
+        probability: 1.0
 management:
   endpoint:
     health:
