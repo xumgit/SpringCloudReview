@@ -18,6 +18,7 @@
 *.iml
 *.ipr
 /logs/
+logs/
 logs/*.log
 
 ### NetBeans ###
